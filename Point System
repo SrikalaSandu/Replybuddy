@@ -1,0 +1,15 @@
+var points = 0
+
+fun completeTask(onTime: Boolean) {
+    if (onTime) {
+        points += 10
+        showEncouragementMessage("Great job! You earned 10 points.")
+    } else {
+        points -= 5
+        showEncouragementMessage("Don't worry, keep trying! You lost 5 points.")
+    }
+}
+
+fun showEncouragementMessage(message: String) {
+    // Display the message to the user
+}
