@@ -1,0 +1,8 @@
+func setTimer(deadline: Date) {
+    let timer = Timer(fireAt: deadline, interval: 0, target: self, selector: #selector(timerFired), userInfo: nil, repeats: false)
+    RunLoop.main.add(timer, forMode: .common)
+}
+
+@objc func timerFired() {
+    // Handle the timer event (e.g., notify user, deduct points)
+}
